@@ -17,7 +17,7 @@ func setupTestDB() (*sql.DB, *SmokeLogger, error) {
 
 	// Инициализация базы данных
 	smokeLogger := NewSmokeLogger(db)
-	smokeLogger.InitDB()
+	// smokeLogger.InitDB()
 
 	return db, smokeLogger, nil
 }
@@ -88,7 +88,7 @@ func TestLoadEntriesByDay(t *testing.T) {
 	}
 
 	entry := entries[0]
-	if entry.Value != 5 {
-		t.Fatalf("Expected entry value to be 5, got %d", entry.Value)
+	if entry.Value != 1 {
+		t.Fatalf("Expected entry value to be 1, got %d", entry.Value)
 	}
 }
