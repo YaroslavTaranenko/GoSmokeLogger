@@ -1,0 +1,6 @@
+smoke_service
+./go-backend
+./go-backend.exe
+./go.mod
+./go.sum
+./smokelogger.db
